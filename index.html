@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .button {
+            background-color:greenyellow;
+            width: 10%;
+            height: 58px;
+            border-radius: 25px;
+            text-emphasis-color: black;
+            cursor: pointer;
+            text-align: center;
+            border-style: solid;
+            border-color: grey;
+            
+            
+
+        }
+        
+.container {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  transform: translate(0, 11px) rotate(-45deg);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  transform: translate(0, -11px) rotate(45deg);
+}
+.example_d {
+color: #070a09 !important;
+text-transform: uppercase;
+background: transparent;
+text-align: center;
+width: 100%;
+height: 90%;
+border: 4px solid transparent !important;
+border-radius: 6px;
+display: inline-block;
+transition: all 0.3s ease 0s;
+}
+.example_d:hover {
+color: #494949 !important;
+border-radius: 50px;
+border-color: #494949 !important;
+transition: all 0.3s ease 0s;
+}
+
+      body {
+        margin: 10px auto;
+        text-align: center;
+      }
+      .content {
+        max-width: 800px;
+        text-align: left;
+        margin: auto;
+      }
+      body {
+  margin: 0;
+  padding: 0;
+}
+
+.slider {
+  width: 100%;
+  overflow: hidden;
+}
+
+.slides {
+  width: 300%;
+  display: flex;
+}
+
+.slide {
+  width: 33.333333%;
+  transition: 0.5s;
+}
+
+.slide img {
+  width: 70%;
+  height: 500px;
+}
+
+/* Optional: add animation for sliding effect */
+.slide {
+  animation: slide 10s infinite;
+}
+
+@keyframes slide {
+  0% { transform: translateX(0%); }
+  20% { transform: translateX(0%); }
+  25% { transform: translateX(-100%); }
+  45% { transform: translateX(-100%); }
+  50% { transform: translateX(-200%); }
+  70% { transform: translateX(-200%); }
+  75% { transform: translateX(-300%); }
+  95% { transform: translateX(-300%); }
+  100% { transform: translateX(0%); }
+}
+
+/* Navigation radio buttons */
+#radio1:checked ~ .first { margin-left: 0; }
+#radio2:checked ~ .first { margin-left: -100%; }
+#radio3:checked ~ .first { margin-left: -200%; }
+
+
+
+.auto-btn1, .auto-btn2, .auto-btn3 {
+  display: inline-block;
+  height: 10px;
+  width: 10px;
+  border-radius: 5px;
+  background-color: gray;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+
+
+
+
+    </style>
+</head>
+<body>
+<header style="width: 100%; height: 60px; border-style: solid; border-color: transparent;background-color: grey">
+    
+    <div style="width: 6%; height: 58px; border-style: solid; border-color: transparent; float: left;">
+   
+<div class="container" onclick="myFunction(this)">
+  <div class="bar1"></div>
+  <div class="bar2"></div>
+  <div class="bar3"></div>
+</div>
+
+<script>
+function myFunction(x) {
+  x.classList.toggle("change");
+}
+</script>
+    </div>
+    <div class="button" style=" float: right; "><h3>sign up</h3>
+    </div>
+    <div class="button" style=" float: right; "><h3>log in</h3>
+    </div>
+    <div style="width: 10%; height: 57px; border-style: solid; border-color: transparent; float: left; margin-left: 300px;background-color: transparent;">
+    <img src="restraunt images/download.png" width="100%" height="57px">
+    </div>
+  
+    <div style="width: 20%; height: 57px; border-style: solid; border-color: transparent; float: left;text-align: center; background-color: transparent;"><h2>MY RESTAURANT</h2>
+    </div>
+</header>
+<nav style="width: 100%; height: 60px; border-style: solid; border-color: transparent;background-color: red">
+  <div class="button_cont" text-align="center" style="width: 10%; height: 58px; border-style: solid; border-color: transparent; background-color: transparent; float: left; margin-left: 350px;"><a class="example_d" href="add-website-here" target="_blank" rel="nofollow noopener"><h3 style="text-align: center;">home</h3></a></div>
+  </div>
+  <div class="button_cont" text-align="center" style="width: 10%; height: 58px; border-style: solid; border-color: transparent; background-color: transparent; float: left;"><a class="example_d" href="add-website-here" target="_blank" rel="nofollow noopener"><h3 style="text-align: center;">About us</h3></a></div>
+  </div>
+  <div class="button_cont" text-align="center" style="width: 10%; height: 58px; border-style: solid; border-color: transparent; background-color: transparent; float: left;"><a class="example_d" href="add-website-here" target="_blank" rel="nofollow noopener"><h4 style="text-align: center;">Order online</h4></a></div>
+</div>
+<div class="button_cont" text-align="center" style="width: 10%; height: 58px; border-style: solid; border-color: transparent; background-color: transparent; float: left;"><a class="example_d" href="add-website-here" target="_blank" rel="nofollow noopener"><h4 style="text-align: center;">Contact us</h4></a></div>
+</div>
+
+</nav>
+<div  style=" height: 500px; border-style: solid; border-color: transparent; background-color: gray;">
+ 
+  <div class="slider">
+    <div class="slides">
+      <input type="radio" name="radio-btn" id="radio1">
+      <input type="radio" name="radio-btn" id="radio2">
+      <input type="radio" name="radio-btn" id="radio3">
+      <div class="slide first">
+        <img src="restraunt images/istockphoto-1191080960-612x612.jpg" alt="Image 1">
+      </div>
+      <div class="slide">
+        <img src="restraunt images/gettyimages-1081422898-612x612.jpg" alt="Image 2">
+      </div>
+      <div class="slide">
+        <img src="restraunt images/pexels-photo-1640772.jpeg" alt="Image 3">
+      </div>
+      <div class="slide">
+        <img src="restraunt images/istockphoto-1409730005-1024x1024.jpg" alt="Image 3">
+      </div>
+     
+    </div>
+  </div>
+  
+
+</div>
+<div style="height: 330px; width: 100%; border-style: solid; border-color: transparent; background-color: gray;" >
+  <div style="height: 50px; width: 500px; border-style: solid; border-color: black; border-radius: 10px; cursor:pointer ; float: left; background-color: red;"><h1 style="text-align: center; color: white;">starter</h1>
+  </div>
+  <div style="height: 50px; width: 500px; border-style: solid; border-color: black;border-radius: 10px; cursor:pointer ;float: right;background-color: red; "><h1 style="text-align: center;color: white;">fast food</h1>
+  </div>
+  <div style="height: 50px; width: 500px; border-style: solid; border-color: black;border-radius: 10px; cursor:pointer ;float: left;background-color: red; margin-top: 10px;"><h1 style="text-align: center;color: white;">handi</h1>
+  </div>
+  <div style="height: 50px; width: 500px; border-style: solid; border-color: black;border-radius: 10px; cursor:pointer ;float: right;background-color: red;margin-top: 10px;"><h1 style="text-align: center;color: white;">mutton karhai</h1>
+  </div>
+  <div style="height: 50px; width: 500px; border-style: solid; border-color: black;border-radius: 10px; cursor:pointer ;float: left;background-color: red; margin-top: 10px;"><h1 style="text-align: center;color: white;">chicken karhai</h1>
+  </div>
+  <div style="height: 50px; width: 500px; border-style: solid; border-color: black;border-radius: 10px; cursor:pointer ; float: right;background-color: red;margin-top: 10px;"><h1 style="text-align: center;color: white;">bar b-q</h1>
+  </div>
+  <div style="height: 50px; width: 500px; border-style: solid; border-color: black;border-radius: 10px; cursor:pointer ;float: right;background-color: red; margin-top: 10px; "><h1 style="text-align: center;color: white;">fish</h1>
+  </div>
+  <div style="height: 50px; width: 500px; border-style: solid; border-color: black;border-radius: 10px; cursor:pointer ;float: left;background-color: red;margin-top: 10px;"><h1 style="text-align: center;color: white;">chinese</h1>
+  </div>
+  <div style="height: 50px; width: 500px; border-style: solid; border-color: black;border-radius: 10px; cursor:pointer ;float: right;background-color: red;margin-top: 10px;"><h1 style="text-align: center;color: white;">tandoori</h1>
+  </div>
+  <div style="height: 50px; width: 500px; border-style: solid; border-color: black;border-radius: 10px; cursor:pointer ;float: left;background-color: red;margin-top: 10px;"><h1 style="text-align: center;color: white;">ice cream</h1>
+  </div>
+  
+  
+
+</div>
+<div style="width:100%; height: 500px; border-style: solid; border-color: transparent; background-color: gray; float: left;">
+  <div style="width:100%; height: 500px; border-style: solid; border-color: transparent; float: left;"><img src="restraunt images/pexels-chan-walrus-941861.jpg" width="100%" height="500px">
+  </div>
+</div>
+
+<div style="width: 100%; height: 500px; border-style: solid; border-color: transparent; float: left; background-color: gray;">
+  <div style="width: 50%; height: 300px; border-style: solid; border-color: transparent; float: right; margin-top: 50px; border-radius: 800px;">
+    <img src="restraunt images/2652401_QFSSL_SupremePizza_00072-d910a935ba7d448e8c7545a963ed7101.jpg" width="50%" height="300px" border-radius="800px">
+  </div>
+  <div style="width: 45%; height: 300px; border-style: solid; border-color: transparent; margin-top: 70px;">
+    <div style="width: 99%; height: 100px; border-style:solid; border-color: rgb(92, 91, 91); border-radius: 800px; background-color: red; "><h1 style="font-size: 50px; font-style: italic; color: gold;"><b>Lunch Special</b></h1>
+    </div>
+    <h2 style="color: aliceblue;"><br>1)  2 slices of cheese pizza</br>with a drink $ 4.60<br>2)  1 slice of pizza cheese with a</br>salad and a drink $6.50</h2>
+  </div>
+</div>
+<div style="width: 100%; height: 300px; border-style: solid ; border-color: transparent; background-color: rgb(160, 156, 156); float: left;">
+  <div style="width: 20%; height: 300px; border-style: solid; border-color: transparent; float: left;">
+  <h1 style="font-style: italic;">My Restaurant</h1>
+  <h3><a href="file:///C:/finance%20website/add-website-here">Terms</a></h3>
+  <h3><a href="file:///C:/finance%20website/add-website-here">Liscence</a></h3>
+  <h3><a href="file:///C:/finance%20website/add-website-here">Blogs</a></h3>
+  </div>
+  <div style="width: 20%; height: 300px; border-style: solid; border-color: transparent; float: left;">
+  <h1 style="font-style: italic;">Help</h1>
+  <h3><a href="file:///C:/finance%20website/add-website-here">Help centers</a></h3>
+  <h3><a href="file:///C:/finance%20website/add-website-here">Authors</a></h3>
+  </div>
+  <div style="width: 20%; height: 300px; border-style: solid; border-color:transparent; float: left;">
+  <h1 style="font-style: italic;">Our Community</h1>
+  <h3><a href="file:///C:/finance%20website/add-website-here">Community</a></h3>
+  <h3><a href="file:///C:/finance%20website/add-website-here">Blogs</a></h3>
+  <h3><a href="file:///C:/finance%20website/add-website-here">Forums</a></h3>
+  <h3><a href="file:///C:/finance%20website/add-website-here">Meetups</a></h3>
+
+  </div>
+  <div style="width: 18%; height: 300px; border-style: solid; border-color: transparent; float: left;">
+  <h1 style="font-style: italic;">About us</h1>
+  <h3><a href="file:///C:/finance%20website/add-website-here">About restairant</a></h3>
+  <h3><a href="file:///C:/finance%20website/add-website-here">Careers</a></h3>
+  <h3><a href="file:///C:/finance%20website/add-website-here">Privacy policy</a></h3>
+  <h3><a href="file:///C:/finance%20website/add-website-here">sitemap</a></h3>
+  </div>
+  <div style="width: 18%; height: 300px; border-style: solid; border-color: transparent; float: left;">
+  <img src="restraunt images/download.png" width="200px" height="100px">
+  <h3>+92 345-1234567</h3>
+</div>
+</div>
+  
+ 
+  
+
+</body>
